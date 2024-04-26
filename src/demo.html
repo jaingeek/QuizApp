@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onclick="display(event)">
+        <input type="radio" name="gender" value="Male"/><label>Male</label>
+        <input type="radio" name="gender" value="Female"/><label>Female</label>
+        <input type="radio" name="gender" value="Other"/><label>Other</label>
+
+        <input type="submit"/>
+    </form>
+
+    <script>
+
+        function display(event){
+            gen = event.target.gender.value
+            alert("gender selceted is: "+gen)
+        }
+    </script>
+</body>
+</html>
